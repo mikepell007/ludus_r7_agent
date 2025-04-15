@@ -1,0 +1,1 @@
+Place the install image in this directory and edit defaults/main.yml with the installer name.

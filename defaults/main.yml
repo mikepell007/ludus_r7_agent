@@ -1,0 +1,7 @@
+---
+# Libreoffice installation script URL
+#ludus_libreoffice_windows_install_package: "https://www.libreoffice.org/donate/dl/win-x86_64/24.8.4/en-US/LibreOffice_24.8.4_Win_x86-64.msi"
+#ludus_libreoffice_windows_install_directory: "c:\\ludus"
+ludus_vm_install_directory: "c:\\ludus"
+ludus_install_directory: /opt/ludus
+r7_agent_installer_image: agentInstaller-x86_64.msi

@@ -1,0 +1,22 @@
+---
+ 
+- name: source secrets from home directory
+  ansible.builtin.include_vars:
+    file: "{{ lookup('env','HOME') }}/secrets.yml"
+
+- name: Check if R7 agent service exists
+  ansible.windows.win_service_info:
+    name: ir_agent
+  register: r7_service_info
+
+- name: Copy R7 agent installer
+  ansible.windows.win_copy:
+    src: "{{ role_path }}/files/{{ r7_agent_installer_image }}"
+    dest: "{{ ludus_vm_install_directory }}"
+    force: false
+  when: r7_service_info.exists != True
+
+- name: Install R7 agent
+  win_command: "msiexec /i {{ludus_vm_install_directory}}\\{{ r7_agent_installer_image }} /l*v insight_agent_install.log CUSTOMTOKEN={{ r7_customer_agent_key  }} /quiet"
+  when: r7_service_info.exists != True
+
