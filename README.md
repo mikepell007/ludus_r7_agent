@@ -11,3 +11,11 @@ sentinel_one_install_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 * For Ludus usage, this file must be in the ludus user home directory (typically /home/ludus).
+* Sample secrets.yml
+```
+# Comcast ULC
+r7_customer_agent_key: zzz:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+# Sales demo env
+sentinel_one_install_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
