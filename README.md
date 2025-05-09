@@ -1,4 +1,4 @@
-# Install SentinelOne Agent on Windows
+# Install Rapid7 Agent on Windows
 
 This was originally for integrating as a [Ludus](https://ludus.cloud) role but should work stand-alone without any modification
 - Copy installer image to files directory
