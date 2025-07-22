@@ -4,10 +4,10 @@ This was originally for integrating as a [Ludus](https://ludus.cloud) role but s
 - Copy installer image to files directory
 - Update tasks/main.yml with filename
 
-* For stand -lone usage
-To store install token, create the file ~/secrets.yml and populate the 'sentinel_one_install_token' variable with your Sentinel One install token:
+* For stand alone usage
+To store install token, create the file ~/secrets.yml and populate the 'r7_customer_agent_key' variable with your Rapid7 customer agent key:
 ```
-sentinel_one_install_token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+r7_customer_agent_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 * For Ludus usage, this file must be in the ludus user home directory (typically /home/ludus).
