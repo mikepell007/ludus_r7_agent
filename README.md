@@ -22,7 +22,7 @@ r7_customer_agent_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 * Edit ludus_r7_agent/defaults/main.yml and change *r7_agent_installer_image* to the name of the .msi downloaded earlier
 * Install the role (*-g* is optional if you want it installed for all users)
 
-```ludus ansible role add -g -d ludus_r7_agent.git```
+```ludus ansible role add -g -d ludus_r7_agent```
 * Edit/create **/home/ludus/secrets.yml** (sudo or from a root proxmox shell) and change *r7_customer_agent_key* to your specific key from R7
 
 ```r7_customer_agent_key: <put your key here>```
